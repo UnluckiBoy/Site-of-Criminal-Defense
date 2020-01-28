@@ -26,7 +26,7 @@ header .top .container {
     margin: 0px auto 0px;
     display: flex;
     align-items: center;
-    height: 130px;
+    /* height: 130px; */
 }
 
 header .logo {
@@ -147,7 +147,7 @@ header .sub-area {
     width: 100%;
     min-height: 683px;
     /* background: url(../img/test-bg.jpg) no-repeat center; */
-    background: grey;
+    background: #696036;
     align-items: center;
     display: flex;
     border-bottom: solid #7ab13c 5px;
@@ -327,7 +327,7 @@ header .sub-area {
     display: block;
     min-height: 850px;
     width: 100%;
-    background: grey center;
+    background: #696036 center;
     text-align: center;
 }
 
@@ -572,7 +572,7 @@ header .sub-area {
     width: 100%;
     display: block;
     height: 785px;
-    background: mediumblue;
+    background: #696036;
 }
 
 .quotes-screen .container {
@@ -678,5 +678,112 @@ header .sub-area {
 }
 
 .phone-screen .link:hover {
+    background: #666666;
+}
+
+.application-screen {
+    width: 100%;
+    display: block;
+    background: #696036;
+}
+
+.application-screen .container {
+    width: 705px;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    position: relative;
+    right: 15px;
+}
+
+.application-screen .title {
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 3rem;
+    margin: 60px auto 70px;
+    letter-spacing: -2px;
+}
+
+.application-screen .title::after {
+    background: #7ab13c center;
+    margin: 20px auto 0px;
+    width: 60px;
+    height: 5px;
+    content: "";
+    display: block;
+    /* right: 10px; */
+    position: relative;
+
+}
+
+.application-screen .box-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.application-screen .block-form {
+    width: 350px;
+    margin-bottom: 12px;
+    padding: 16px 13px 16px 15px;
+    border: solid #FFFFFF 1px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    display: block;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    
+}
+
+.application-screen .name-form {
+    background: url() right no-repeat;
+    background-position-y: center;
+}
+
+.application-screen .email-form {
+    background: url() right no-repeat;
+    background-position-y: center;
+}
+
+.application-screen .phone-form {
+    background: url() right no-repeat;
+    background-position-y: center;
+}
+
+.application-screen .subject-form {
+    background: url() right no-repeat;
+    background-position-y: center;
+}
+
+.application-screen .message-form {
+    width: 100%;
+    margin-bottom: 12px;
+    background: #ffffff00;
+    padding: 15px 15px 16px 15px;
+    border: solid #FFFFFF 1px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    display: block;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+}
+
+.application-screen .submit-form {
+    width: 100%;
+    text-align: center;
+    background: #7ab13c;
+    border-radius: 10px;
+    padding: 16px 0px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: block;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border: 0px;
+    margin-bottom: 100px;
+}
+
+.application-screen .submit-form:hover {
     background: #666666;
 }
