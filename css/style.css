@@ -787,3 +787,29 @@ header .sub-area {
 .application-screen .submit-form:hover {
     background: #666666;
 }
+
+.badge-screen {
+    width: 100%;
+    display: block;
+    background: #FFFFFF;
+}
+
+.badge-screen .container {
+    max-width: 1160px;
+    align-items: center;
+    margin: 60px auto;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    right: 50px;
+
+}
+
+.badge-screen .box-link {
+    text-decoration: none;
+    display: block;
+}
+
+.badge-screen .box-link__pic {
+    width: min-content;
+}
