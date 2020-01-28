@@ -513,7 +513,7 @@ header .sub-area {
 .practices-screen .wrap-box {
     display: flex;
     margin: 0px auto;
-    width: 1209px;
+    max-width: 1209px;
     flex-wrap: wrap;
     position: relative;
     right: 16px;
@@ -630,3 +630,53 @@ header .sub-area {
     position: relative;
 }
 
+.phone-screen {
+    width: 100%;
+    background: #7ab13c;
+    min-height: 400px;
+    align-items: center;
+    display: block;
+}
+
+.phone-screen .container {
+    max-width: 1210px;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.phone-screen .title {
+    font-size: 3.8rem;
+    text-align: center;
+    display: inline-block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #FFFFFF;
+    line-height: 1.1;
+}
+
+.phone-screen .text {
+    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.7rem;
+}
+
+.phone-screen .link {
+    color: #61582d;
+    background: #FFFFFF;
+    padding: 18px 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+
+}
+
+.phone-screen .link:hover {
+    background: #666666;
+}
