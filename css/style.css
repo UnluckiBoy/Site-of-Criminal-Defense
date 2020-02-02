@@ -120,16 +120,16 @@ header li {
     list-style: none;
 }
 
-header .dropdown {
+header .dropdown-menu {
     top: 100%;
-    width: 200px;
+    width: 220px;
     position: absolute;
     z-index: 10;
-    display: block;
-    background: #696036a4;
+    display: none;
+    background: rgb(97, 88, 45);
 }
 
-header .dropdown:hover {
+header .dropdown:hover > .dropdown-menu {
     display: block;
 }
 
@@ -137,10 +137,22 @@ header .main-area {
     font-weight: bold;
     font-size: 16px;
     list-style-type: none;
+    position: relative;
+    left: -25px;
+    display: inline-block;
+    margin: 15px 0px 10px;
+    color: #FFFFFF;
 }
 
 header .sub-area {
     list-style-type: none;
+    position: relative;
+    left: -30px;
+    display: inline-block;
+    margin: 4px 0px;
+    font-weight: normal;
+    text-transform: none;
+    color: #FFFFFF;
 }
 
 .cover-screen {
