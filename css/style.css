@@ -383,7 +383,7 @@ header .sub-area {
     display: inline-block;
     color: #FFFFFF;
     font-size: 3rem;
-    margin: 125px auto 70px;
+    margin: 44px auto 70px;
     letter-spacing: -2px;
 }
 
@@ -394,6 +394,10 @@ header .sub-area {
     color: #7ab13c;
     font-size: 0px;
     background-size: 200%;
+    background: url(../img/icons/quote-green.svg) center no-repeat;
+    background-size: contain;
+    height: 68px;
+    margin-bottom: 10px;
 }
 
 .testimonials-screen .title::after {
@@ -403,7 +407,6 @@ header .sub-area {
     height: 5px;
     content: "";
     display: block;
-    right: 20px;
     position: relative;
 }
 
@@ -653,6 +656,19 @@ header .sub-area {
     width: 900px;
     position: relative;
     top: 5px;
+}
+
+.quotes-screen .box::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    height: 0;
+    height: 100px;
+    width: 100px;
+    background: url(../img/icons/quote-grey.svg) no-repeat center;
+    background-size: contain;
+    opacity: .2;
 }
 
 .quotes-screen .box .content {
