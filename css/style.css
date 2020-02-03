@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,600,700|Oswald:300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:200,300,400|Roboto:300,300i,400,400i,500|Oswald:300,400,500&display=swap');
 
 html,
 body {
@@ -13,7 +13,35 @@ body {
 }
 
 body {
+    font-family: 'Roboto';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Oswald', sans-serif;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.icon_arrow {
+    background-image: url(../img/icons/arrow.svg);
+}
+
+.icon_phone {
+    background-image: url(../img/icons/phone.svg);
+    vertical-align: top;
+    margin-right: 10px;
 }
 
 header {
@@ -26,6 +54,7 @@ header {
     display: block;
     background: #FFFFFF;
     padding: 16px 0;
+    font-family: 'Oswald', sans-serif;
 }
 
 header .top .container {
@@ -95,7 +124,6 @@ header .navbar .container {
     display: block;
     height: 55px;
     align-items: center;
-    padding-right: 150px;
 }
 
 header .menu {
@@ -104,8 +132,6 @@ header .menu {
     padding: 0px;
     align-items: center;
     width: 1160px;
-    margin-left: 90px;
-
 }
 
 header .menu__link {
@@ -201,7 +227,8 @@ header .sub-area {
     display: inline-block;
     margin: 36px auto 0px;
     font-size: 19px;
-    font-weight: bold;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .cover-screen .button-to-contact:hover {
@@ -225,25 +252,21 @@ header .sub-area {
 
 .reason-screen .block {
     width: 1180px;
-    border: solid #dfdfdf 5px;
-    border-left: solid #dfdfdf 3px;
-    border-right: solid #dfdfdf 3px;
-    border-bottom: solid #dfdfdf 3px;
+    border: solid #dfdfdf 4px;
     align-items: center;
     display: block;
-    margin-right: 55px;;
     position: relative;
 }
 
 .reason-screen .block::after {
     background: #FFFFFF center;
-    margin: 0px auto 5px;
     width: 980px;
-    height: 5px;
+    height: 6px;
     content: "";
     display: block;
     position: absolute;
     left: 95px;
+    bottom: -5px;
 }
 
 .reason-screen .block .title {
@@ -265,16 +288,6 @@ header .sub-area {
     display: block;
 }
 
-/* .reason-screen .block .title::after {
-    background: red center;
-    margin: 36px auto 5px;
-    width: 60px;
-    height: 5px;
-    content: "";
-    display: block;
-    position: absolute;
-} */
-
 .reason-screen .text {
     color: #000000;
     line-height: 1.9;
@@ -282,8 +295,9 @@ header .sub-area {
     display: block;
     margin: 15px auto 45px;
     text-align: center;
-    padding-right: 50px;
     font-size: 1.1rem;
+    font-family: 'Lato';
+    font-weight: 300;
 }
 
 .reason-screen .box {
@@ -353,7 +367,7 @@ header .sub-area {
     display: inline-block;
     color: #FFFFFF;
     font-size: 3rem;
-    margin: 125px auto 70px;
+    margin: 44px auto 70px;
     letter-spacing: -2px;
 }
 
@@ -364,6 +378,10 @@ header .sub-area {
     color: #7ab13c;
     font-size: 0px;
     background-size: 200%;
+    background: url(../img/icons/quote-green.svg) center no-repeat;
+    background-size: contain;
+    height: 68px;
+    margin-bottom: 10px;
 }
 
 .testimonials-screen .title::after {
@@ -373,7 +391,6 @@ header .sub-area {
     height: 5px;
     content: "";
     display: block;
-    right: 20px;
     position: relative;
 }
 
@@ -382,32 +399,18 @@ header .sub-area {
     width: 1280px;
     margin: 0px auto 0px;
     align-items: center;
-    /* justify-content: space-between; */
-    padding-right: 50px;
-}
-
-.testimonials-screen .carusel__previous {
-    width: 30px;
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 3rem;
-    display: block;
-    text-decoration: none;
-    padding-right: 25px;
-    min-height: 461px;
+    position: relative;
 }
 
 .testimonials-screen .carusel-inner {
-    justify-content: space-between;
     display: flex;
-    width: 100%;
+    margin: 0 auto;
 }
 
 .testimonials-screen .comment {
     width: 567px;
     display: block;
-    margin-bottom: 60px;
-
+    margin: 0 20px 60px;
 }
 
 .testimonials-screen .comment__cloud {
@@ -418,25 +421,46 @@ header .sub-area {
     position: relative;
     border: solid #7ab13a 2px;
     min-height: 276px;
-    /* box-sizing: border-box; */
     margin-bottom: 80px;
+    font-weight: 300;
 }
 
 .testimonials-screen .comment__cloud::after {
     content: "";
     position: absolute;
-    top: 100%;
-    left: 240px;
-    border-width: 55px;
-    border-style: solid;
-    border-color: #FFFFFF transparent transparent transparent;
+    display: block;
+    border-bottom: solid #7ab13a 2px;
+    border-right: solid #7ab13a 2px;
+    height: 52px;
+    width: 52px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    z-index: 1;
+    transform: rotate(45deg) skew(10deg, 10deg) translate(-15px, 50px);
 }
 
 .testimonials-screen .comment__stars {
     color: #7ab13c;
     text-align: center;
-    display: block;
+    display: flex;
+    justify-content: space-between;
     margin: 50px auto 0px;
+    width: 152px;
+    height: 26px;
+}
+
+.comment__star {
+    background: url(../img/icons/star.svg) no-repeat center;
+    background-size: contain;
+    display: block;
+    width: 30px;
+    height: 100%;
+}
+
+.comment__star_off {
+    background-image: url(../img/icons/no-star.svg);
 }
 
 .testimonials-screen .comment__text {
@@ -446,6 +470,7 @@ header .sub-area {
     font-style: italic;
     margin: 20px 35px 40px;
     display: block;
+    letter-spacing: 1px;
 }
 
 .testimonials-screen .comment__client-name {
@@ -455,6 +480,8 @@ header .sub-area {
     display: block;
     margin: 0px auto 0px;
     margin-block-start: 0em;
+    letter-spacing: 2px;
+    font-size: 18px;
 }
 
 .testimonials-screen .comment__place {
@@ -463,17 +490,27 @@ header .sub-area {
     text-align: center;
     display: block;
     margin: 5px auto 0px;
+    font-weight: 300;
+    font-size: 16px;
 }
 
-.testimonials-screen .carusel__next {
-    width: 30px;
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 3rem;
+.carusel__nav {
+    background: url(../img/icons/arrow.svg) no-repeat center;
+    background-size: contain;
     display: block;
-    text-decoration: none;
-    padding-left: 25px;
-    min-height: 461px;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 24%;
+}
+
+.carusel__prev {
+    transform: rotate(180deg);
+    left: 0;
+}
+
+.carusel__next {
+    right: 0;
 }
 
 .testimonials-screen .read-more {
@@ -487,8 +524,7 @@ header .sub-area {
     text-transform: uppercase;
     margin: 0px auto 50px;
     font-size: 19px;
-    font-weight: 600;
-    font-family: 'Lato';
+    font-weight: 500;
     letter-spacing: .7px;
 }
 
@@ -526,7 +562,6 @@ header .sub-area {
     height: 6px;
     content: "";
     display: block;
-    right: 20px;
     position: relative;
 }
 
@@ -536,7 +571,6 @@ header .sub-area {
     max-width: 1209px;
     flex-wrap: wrap;
     position: relative;
-    right: 16px;
 }
 
 .practices-screen .block-link {
@@ -585,7 +619,8 @@ header .sub-area {
     line-height: 1.5;
     color: #000000;
     text-align: center;
-    
+    font-family: 'Lato';
+    font-weight: 300;    
 }
 
 .quotes-screen {
@@ -613,11 +648,25 @@ header .sub-area {
     top: 5px;
 }
 
+.quotes-screen .box::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    height: 0;
+    height: 100px;
+    width: 100px;
+    background: url(../img/icons/quote-grey.svg) no-repeat center;
+    background-size: contain;
+    opacity: .2;
+}
+
 .quotes-screen .box .content {
     display: block;
     margin: 55px 100px;
     width: 500px;
-    
+    font-family: 'Lato';
+    font-weight: 300;
 }
 
 .quotes-screen .box .text {
@@ -663,6 +712,7 @@ header .sub-area {
     display: block;
     margin: 0px auto;
     text-align: center;
+    padding-top: 60px;
 }
 
 .phone-screen .title {
@@ -675,13 +725,20 @@ header .sub-area {
     margin-inline-end: 0px;
     color: #FFFFFF;
     line-height: 1.1;
+    font-weight: 400;
+    font-weight: 400;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    line-height: 1.2;
 }
 
 .phone-screen .text {
     color: #FFFFFF;
     text-align: center;
     display: inline-block;
-    font-size: 1.7rem;
+    font-family: Oswald;
+    font-size: 1.5rem;
+    letter-spacing: 1.4px;
 }
 
 .phone-screen .link {
@@ -694,7 +751,7 @@ header .sub-area {
     text-decoration: none;
     border-radius: 50px;
     display: inline-block;
-
+    letter-spacing: .7px;
 }
 
 .phone-screen .link:hover {
@@ -749,31 +806,39 @@ header .sub-area {
     padding: 16px 13px 16px 15px;
     border: solid #FFFFFF 1px;
     border-radius: 10px;
-    color: #FFFFFF;
+    color: #fefdfa;
     display: block;
     box-sizing: border-box;
     font-size: 0.9rem;
-    
+    font-family: Lato;
+    background-color: transparent;
+    background-position-y: center;
+    background-position-x: 97%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    font-weight: 200;
+}
+
+.block-form::placeholder {
+    color: inherit;
 }
 
 .application-screen .name-form {
-    background: url() right no-repeat;
-    background-position-y: center;
+    background-image: url(../img/icons/avatar.svg);
 }
 
 .application-screen .email-form {
-    background: url() right no-repeat;
-    background-position-y: center;
+    background-image: url(../img/icons/mail.svg);
 }
 
 .application-screen .phone-form {
-    background: url() right no-repeat;
-    background-position-y: center;
+    background-image: url(../img/icons/phone-call.svg);
+    background-size: 22px;
 }
 
 .application-screen .subject-form {
-    background: url() right no-repeat;
-    background-position-y: center;
+    background-image: url(../img/icons/document.svg);
+    background-size: 22px;
 }
 
 .application-screen .message-form {
@@ -787,6 +852,13 @@ header .sub-area {
     display: block;
     box-sizing: border-box;
     font-size: 0.9rem;
+    color: #fefdfa;
+    font-weight: 200;
+    font-family: Lato;
+}
+
+.application-screen .message-form::placeholder {
+    color: inherit;
 }
 
 .application-screen .submit-form {
@@ -798,10 +870,11 @@ header .sub-area {
     text-transform: uppercase;
     color: #FFFFFF;
     display: block;
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     font-weight: 600;
     border: 0px;
     margin-bottom: 100px;
+    padding-left: 50px;
 }
 
 .application-screen .submit-form:hover {
@@ -821,8 +894,6 @@ header .sub-area {
     justify-content: space-between;
     display: flex;
     position: relative;
-    right: 50px;
-
 }
 
 .badge-screen .box-link {
@@ -868,7 +939,7 @@ footer .contact-us .title {
     font-weight: bold;
     display: block;
     margin: 0px 0px 10px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 footer .contact-us .title::after {
@@ -887,7 +958,17 @@ footer .contact-us__content {
 
 footer .contact-us__item {
     display: flex;
-    margin: 15px 0px 16px;
+    align-items: flex-start;
+}
+
+footer .contact-us__address {
+    margin-top: 24px;
+}
+
+footer .contact-us__email,
+footer .contact-us__phone-number {
+    align-items: center;
+    margin-top: 11px;
 }
 
 footer .contact-us__phone-number {
@@ -897,16 +978,16 @@ footer .contact-us__phone-number {
 footer .contact-us__pic {
     display: block;
     width: min-content;
-    margin-right: 33px;
+    margin-right: 12px;
+    width: 23px;
 }
 
 footer .contact-us__text {
     display: inline-block;
     line-height: 1.7;
     color: #FFFFFF;
-    font-size: 0.7rem;
-    margin-block-end: 0em;
-    margin-block-start: 1em;
+    font-size: 0.8rem;
+    margin: 0;
 }
 
 footer .contact-us__link {
