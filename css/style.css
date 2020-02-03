@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,600,700|Oswald:300,400,500&display=swap');
 
 html,
 body {
@@ -187,6 +187,7 @@ header .sub-area {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-size: 4rem;
+    font-weight: 400;
 }
 
 .cover-screen .button-to-contact {
@@ -486,8 +487,10 @@ header .sub-area {
     display: inline-block;
     text-transform: uppercase;
     margin: 0px auto 50px;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: 'Lato';
+    letter-spacing: .7px;
 }
 
 .testimonials-screen .read-more:hover {
