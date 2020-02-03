@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Roboto:300,300i,400,400i,500|Oswald:300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:200,300,400|Roboto:300,300i,400,400i,500|Oswald:300,400,500&display=swap');
 
 html,
 body {
@@ -415,32 +415,18 @@ header .sub-area {
     width: 1280px;
     margin: 0px auto 0px;
     align-items: center;
-    /* justify-content: space-between; */
-    padding-right: 50px;
-}
-
-.testimonials-screen .carusel__previous {
-    width: 30px;
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 3rem;
-    display: block;
-    text-decoration: none;
-    padding-right: 25px;
-    min-height: 461px;
+    position: relative;
 }
 
 .testimonials-screen .carusel-inner {
-    justify-content: space-between;
     display: flex;
-    width: 100%;
+    margin: 0 auto;
 }
 
 .testimonials-screen .comment {
     width: 567px;
     display: block;
-    margin-bottom: 60px;
-
+    margin: 0 20px 60px;
 }
 
 .testimonials-screen .comment__cloud {
@@ -451,7 +437,6 @@ header .sub-area {
     position: relative;
     border: solid #7ab13a 2px;
     min-height: 276px;
-    /* box-sizing: border-box; */
     margin-bottom: 80px;
     font-weight: 300;
 }
@@ -475,8 +460,19 @@ header .sub-area {
 .testimonials-screen .comment__stars {
     color: #7ab13c;
     text-align: center;
-    display: block;
+    display: flex;
+    justify-content: space-between;
     margin: 50px auto 0px;
+    width: 152px;
+    height: 26px;
+}
+
+.comment__star {
+    background: url(../img/icons/star.svg) no-repeat center;
+    background-size: contain;
+    display: block;
+    width: 30px;
+    height: 100%;
 }
 
 .testimonials-screen .comment__text {
@@ -510,15 +506,23 @@ header .sub-area {
     font-size: 16px;
 }
 
-.testimonials-screen .carusel__next {
-    width: 30px;
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 3rem;
+.carusel__nav {
+    background: url(../img/icons/arrow.svg) no-repeat center;
+    background-size: contain;
     display: block;
-    text-decoration: none;
-    padding-left: 25px;
-    min-height: 461px;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 24%;
+}
+
+.carusel__prev {
+    transform: rotate(180deg);
+    left: 0;
+}
+
+.carusel__next {
+    right: 0;
 }
 
 .testimonials-screen .read-more {
@@ -816,7 +820,7 @@ header .sub-area {
     padding: 16px 13px 16px 15px;
     border: solid #FFFFFF 1px;
     border-radius: 10px;
-    color: #FFFFFF;
+    color: #fefdfa;
     display: block;
     box-sizing: border-box;
     font-size: 0.9rem;
@@ -826,6 +830,11 @@ header .sub-area {
     background-position-x: 97%;
     background-size: 20px;
     background-repeat: no-repeat;
+    font-weight: 200;
+}
+
+.block-form::placeholder {
+    color: inherit;
 }
 
 .application-screen .name-form {
@@ -857,6 +866,13 @@ header .sub-area {
     display: block;
     box-sizing: border-box;
     font-size: 0.9rem;
+    color: #fefdfa;
+    font-weight: 200;
+    font-family: Lato;
+}
+
+.application-screen .message-form::placeholder {
+    color: inherit;
 }
 
 .application-screen .submit-form {
