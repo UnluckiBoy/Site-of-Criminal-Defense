@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,600,700|Oswald:300,400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Roboto:300,300i,400,400i,500|Oswald:300,400,500&display=swap');
 
 html,
 body {
@@ -13,12 +13,21 @@ body {
 }
 
 body {
+    font-family: 'Roboto';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Oswald', sans-serif;
 }
 
 header {
     width: 100%;
     display: block;
+    font-family: 'Oswald', sans-serif;
 }
 
 .top {
@@ -202,9 +211,8 @@ header .sub-area {
     display: inline-block;
     margin: 36px auto 0px;
     font-size: 19px;
-    font-weight: bold;
-    letter-spacing: .7px;
-    font-family: 'Lato';
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .cover-screen .button-to-contact:hover {
@@ -288,6 +296,7 @@ header .sub-area {
     padding-right: 50px;
     font-size: 1.1rem;
     font-family: 'Lato';
+    font-weight: 300;
 }
 
 .reason-screen .box {
@@ -343,7 +352,6 @@ header .sub-area {
     margin-block-start: 0em;
     margin-block-end: 2em;
     font-size: 16px;
-    font-family: 'Lato';
 }
 
 .testimonials-screen {
@@ -425,6 +433,7 @@ header .sub-area {
     min-height: 276px;
     /* box-sizing: border-box; */
     margin-bottom: 80px;
+    font-weight: 300;
 }
 
 .testimonials-screen .comment__cloud::after {
@@ -457,8 +466,7 @@ header .sub-area {
     font-style: italic;
     margin: 20px 35px 40px;
     display: block;
-    font-family: 'Lato';
-    font-size: 18px;
+    letter-spacing: 1px;
 }
 
 .testimonials-screen .comment__client-name {
@@ -468,6 +476,8 @@ header .sub-area {
     display: block;
     margin: 0px auto 0px;
     margin-block-start: 0em;
+    letter-spacing: 2px;
+    font-size: 18px;
 }
 
 .testimonials-screen .comment__place {
@@ -476,6 +486,8 @@ header .sub-area {
     text-align: center;
     display: block;
     margin: 5px auto 0px;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 .testimonials-screen .carusel__next {
@@ -500,8 +512,7 @@ header .sub-area {
     text-transform: uppercase;
     margin: 0px auto 50px;
     font-size: 19px;
-    font-weight: 600;
-    font-family: 'Lato';
+    font-weight: 500;
     letter-spacing: .7px;
 }
 
@@ -598,7 +609,8 @@ header .sub-area {
     line-height: 1.5;
     color: #000000;
     text-align: center;
-    
+    font-family: 'Lato';
+    font-weight: 300;    
 }
 
 .quotes-screen {
@@ -630,7 +642,8 @@ header .sub-area {
     display: block;
     margin: 55px 100px;
     width: 500px;
-    
+    font-family: 'Lato';
+    font-weight: 300;
 }
 
 .quotes-screen .box .text {
@@ -676,6 +689,7 @@ header .sub-area {
     display: block;
     margin: 0px auto;
     text-align: center;
+    padding-top: 60px;
 }
 
 .phone-screen .title {
@@ -688,13 +702,20 @@ header .sub-area {
     margin-inline-end: 0px;
     color: #FFFFFF;
     line-height: 1.1;
+    font-weight: 400;
+    font-weight: 400;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    line-height: 1.2;
 }
 
 .phone-screen .text {
     color: #FFFFFF;
     text-align: center;
     display: inline-block;
-    font-size: 1.7rem;
+    font-family: Oswald;
+    font-size: 1.5rem;
+    letter-spacing: 1.4px;
 }
 
 .phone-screen .link {
@@ -707,7 +728,7 @@ header .sub-area {
     text-decoration: none;
     border-radius: 50px;
     display: inline-block;
-
+    letter-spacing: .7px;
 }
 
 .phone-screen .link:hover {
