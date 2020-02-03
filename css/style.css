@@ -124,7 +124,6 @@ header .navbar .container {
     display: block;
     height: 55px;
     align-items: center;
-    padding-right: 150px;
 }
 
 header .menu {
@@ -133,8 +132,6 @@ header .menu {
     padding: 0px;
     align-items: center;
     width: 1160px;
-    margin-left: 90px;
-
 }
 
 header .menu__link {
@@ -259,7 +256,6 @@ header .sub-area {
     border: solid #dfdfdf 4px;
     align-items: center;
     display: block;
-    margin-right: 55px;;
     position: relative;
 }
 
@@ -293,16 +289,6 @@ header .sub-area {
     display: block;
 }
 
-/* .reason-screen .block .title::after {
-    background: red center;
-    margin: 36px auto 5px;
-    width: 60px;
-    height: 5px;
-    content: "";
-    display: block;
-    position: absolute;
-} */
-
 .reason-screen .text {
     color: #000000;
     line-height: 1.9;
@@ -310,7 +296,6 @@ header .sub-area {
     display: block;
     margin: 15px auto 45px;
     text-align: center;
-    padding-right: 50px;
     font-size: 1.1rem;
     font-family: 'Lato';
     font-weight: 300;
@@ -475,6 +460,10 @@ header .sub-area {
     height: 100%;
 }
 
+.comment__star_off {
+    background-image: url(../img/icons/no-star.svg);
+}
+
 .testimonials-screen .comment__text {
     color: #000000;
     line-height: 1.9;
@@ -574,7 +563,6 @@ header .sub-area {
     height: 6px;
     content: "";
     display: block;
-    right: 20px;
     position: relative;
 }
 
@@ -584,7 +572,6 @@ header .sub-area {
     max-width: 1209px;
     flex-wrap: wrap;
     position: relative;
-    right: 16px;
 }
 
 .practices-screen .block-link {
@@ -908,8 +895,6 @@ header .sub-area {
     justify-content: space-between;
     display: flex;
     position: relative;
-    right: 50px;
-
 }
 
 .badge-screen .box-link {
