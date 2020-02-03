@@ -236,10 +236,7 @@ header .sub-area {
 
 .reason-screen .block {
     width: 1180px;
-    border: solid #dfdfdf 5px;
-    border-left: solid #dfdfdf 3px;
-    border-right: solid #dfdfdf 3px;
-    border-bottom: solid #dfdfdf 3px;
+    border: solid #dfdfdf 4px;
     align-items: center;
     display: block;
     margin-right: 55px;;
@@ -248,13 +245,13 @@ header .sub-area {
 
 .reason-screen .block::after {
     background: #FFFFFF center;
-    margin: 0px auto 5px;
     width: 980px;
-    height: 5px;
+    height: 6px;
     content: "";
     display: block;
     position: absolute;
     left: 95px;
+    bottom: -5px;
 }
 
 .reason-screen .block .title {
@@ -787,7 +784,7 @@ header .sub-area {
     display: block;
     box-sizing: border-box;
     font-size: 0.9rem;
-    
+    font-family: Lato;
 }
 
 .application-screen .name-form {
@@ -902,7 +899,7 @@ footer .contact-us .title {
     font-weight: bold;
     display: block;
     margin: 0px 0px 10px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 footer .contact-us .title::after {
