@@ -958,6 +958,11 @@ footer .directions {
 
 }
 
+.directions__map iframe {
+    width: 100%;
+    height: 100%;
+}
+
 footer .directions .title {
     color: #FFFFFF;
     font-weight: bold;
