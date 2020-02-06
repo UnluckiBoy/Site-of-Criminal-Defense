@@ -1270,63 +1270,6 @@ footer .bottom-box .information__link {
     font-size: 1.2rem;
 }
 
-.faq__main-screen .side-menu {
-    width: 100%;
-    box-sizing: border-box;
-    border: 1px solid #ebebeb;
-    background: #F9F9FA;
-    display: block;
-    margin-bottom: 17px;
-    margin-top: 10px;
-}
-
-.faq__main-screen .side-menu ul {
-    padding-inline-start: 0px;
-    list-style: none;
-}
-
-.faq__main-screen .side-menu li {
-    padding-inline-start: 0px;
-    list-style: none;
-}
-
-.faq__main-screen .side-menu__list {
-    margin: 20px 20px 0px;
-    font-size: 0.9rem;
-}
-
-.faq__main-screen .side-menu__link {
-    text-decoration: none;
-}
-
-.faq__main-screen .side-menu__main-area {
-    color: #000000;
-    font-weight: bold;
-    margin-bottom: 12px;
-    display: inline-block;
-}
-
-.faq__main-screen .side-menu__sub-area {
-    margin-bottom: 14px;
-    display: inline-block;
-    color: #656565;
-}
-
-.faq__main-screen .right-box__link {
-    text-decoration: none;
-    color: #FFFFFF;
-    padding: 18px 0px;
-    background: #7ab13c;
-    border-radius: 5px;
-    box-sizing: border-box;
-    display: block;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 500;
-    width: 100%;
-    text-align: center;
-    
-}
 
 .testimonials__cover-screen {
     width: 100%;
@@ -1410,6 +1353,9 @@ footer .bottom-box .information__link {
     border: 1px solid #ebebeb;
     display: block;
     border-radius: 15px;
+    background: url(..//img/icons/quote-light-grey1.png) no-repeat top left;
+    background-size: 70px;
+    background-position: 30px 20px;
 }
 
 .testimonials__main-screen .quote-block__content {
@@ -1440,7 +1386,7 @@ footer .bottom-box .information__link {
     font-size: 1.2rem;
 }
 
-.testimonials__main-screen .right-box {
+.right-box {
     width: 315px;
     display: block;
     position: relative;
@@ -1448,7 +1394,7 @@ footer .bottom-box .information__link {
 
 }
 
-.testimonials__main-screen .heading {
+.right-box__heading {
     color: #61582d;
     display: block;
     margin-bottom: 10px;
@@ -1459,52 +1405,52 @@ footer .bottom-box .information__link {
     font-size: 1.2rem;
 }
 
-.testimonials__main-screen .side-menu {
+.side-menu {
     width: 100%;
     box-sizing: border-box;
     border: 1px solid #ebebeb;
     background: #F9F9FA;
     display: block;
-    margin-bottom: 17px;
+    margin-bottom: 21px;
     margin-top: 10px;
 }
 
-.testimonials__main-screen .side-menu ul {
+.side-menu ul {
     padding-inline-start: 0px;
     list-style: none;
 }
 
-.testimonials__main-screen .side-menu li {
+.side-menu li {
     padding-inline-start: 0px;
     list-style: none;
 }
 
-.testimonials__main-screen .side-menu__list {
-    margin: 15px 20px 0px;
+.side-menu__list {
+    margin: 18px 20px 0px;
     font-size: 0.9rem;
 }
 
-.testimonials__main-screen .side-menu__link {
+.side-menu__link {
     text-decoration: none;
 }
 
-.testimonials__main-screen .side-menu__main-area {
+.side-menu__main-area {
     color: #000000;
     font-weight: bold;
     margin-bottom: 12px;
     display: inline-block;
 }
 
-.testimonials__main-screen .side-menu__sub-area {
+.side-menu__sub-area {
     margin-bottom: 14px;
     display: inline-block;
     color: #656565;
 }
 
-.testimonials__main-screen .right-box__link {
+.right-box__link {
     text-decoration: none;
     color: #FFFFFF;
-    padding: 18px 0px;
+    padding: 20px 0px;
     background: #7ab13c;
     border-radius: 5px;
     box-sizing: border-box;
@@ -1515,6 +1461,150 @@ footer .bottom-box .information__link {
     width: 100%;
     text-align: center;
 }
+
+/* about-us page */
+
+.about-us__cover-screen {
+    width: 100%;
+    height: 295px;
+    display: flex;
+    border-bottom: 5px solid #7ab13c;
+    background: url();
+    align-items: center;
+}
+
+.about-us__cover-screen .container {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.about-us__cover-screen .title {
+    display: inline-block;
+    /* color: #FFFFFF; */
+    color: #000000;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 3.9rem;
+    font-weight: 400;
+    position: relative;
+    right: 30px;
+    bottom: 12px;
+
+}
+
+.about-us__main-screen {
+    width: 100%;
+    display: block;
+    background: #FFFFFF;
+}
+
+.about-us__main-screen .container {
+    max-width: 1250px;
+    display: block;
+    margin: 20px auto 210px;
+}
+
+.about-us__main-screen .center-box {
+    display: flex;
+    width: 100%;
+}
+
+.about-us__main-screen .left-box {
+    width: 853px;
+    display: block;
+    margin-right: auto;
+    margin-top: 14px;
+}
+
+.about-us__main-screen .breadcrumbs {
+    margin: 0px 0px 45px;
+    padding-inline-start: 0px;
+}
+
+.about-us__main-screen .breadcrumbs__item {
+    display: inline-block;
+}
+
+.about-us__main-screen .breadcrumbs__link {
+    text-decoration: none;
+    color: #777777;
+    font-size: 0.7rem;
+}
+
+.about-us__main-screen .breadcrumbs__item + .breadcrumbs__item::before {
+    content: '/';
+    padding: 0px 5px;
+}
+
+.about-us__main-screen .bio-box {
+    display: flex;
+    width: 100%;
+    margin-bottom: 38px;
+}
+
+.about-us__main-screen .bio-box__portrait {
+    height: min-content;
+    border: solid 8px #e0e0e0;
+    display: block;
+    margin-right: 28px;
+}
+
+.about-us__main-screen .bio-box__content-box {
+    /* width: 300px; */
+    display: block;
+}
+
+.about-us__main-screen .bio-box__name {
+    color: #61582d;
+    display: inline-block;
+    margin-bottom: 11px;
+    margin-block-start: 0em;
+    font-size: 1.2rem;
+}
+
+.about-us__main-screen .bio-box__text {
+    display: inline-block;
+    line-height: 1.95;
+    font-weight: 500;
+    margin-bottom: 39px;
+    width: 100%;
+    margin-block-start: 0em;
+}
+
+.about-us__main-screen .experience-box {
+    display: block;
+    width: 100%;
+}
+
+.about-us__main-screen .experience-box__list {
+    padding-inline-start: 0px;
+    list-style: none;
+}
+
+.about-us__main-screen .experience-box__main-item {
+    padding-inline-start: 0px;
+    list-style: none;
+    font-size: 1.14rem;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.about-us__main-screen .experience-box__main-item + ul {
+    padding-inline-start: 0px;
+    margin-bottom: 38px;
+}
+
+.about-us__main-screen .experience-box__sub-item {
+    padding-inline-start: 0px;
+    list-style: none;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 17px;
+}
+
 
 @media screen and (max-width: 1270px) {
     .container {
