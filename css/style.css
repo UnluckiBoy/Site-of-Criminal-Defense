@@ -368,7 +368,6 @@ header .sub-area {
     display: block;
 }
 
-
 .reason-screen .mini__text {
     display: inline-block;
     margin: 5px 15px 25px;
@@ -381,7 +380,6 @@ header .sub-area {
 
 .testimonials-screen {
     display: block;
-    min-height: 850px;
     width: 100%;
     background: #696036 center;
     text-align: center;
@@ -1178,8 +1176,6 @@ footer .bottom-box .information__link {
     font-size: 3.9rem;
     font-weight: 400;
     position: relative;
-    right: 30px;
-    bottom: 12px;
 }
 
 .faq__main-screen {
@@ -1200,7 +1196,7 @@ footer .bottom-box .information__link {
 }
 
 .faq__main-screen .left-box {
-    width: 853px;
+    width: 68%;
     display: block;
     margin-right: auto;
     margin-top: 35px;
@@ -1281,11 +1277,8 @@ footer .bottom-box .information__link {
 }
 
 .faq__main-screen .right-box {
-    width: 315px;
+    width: 25%;
     display: block;
-    position: relative;
-    right: 50px;
-
 }
 
 .faq__main-screen .heading {
@@ -1326,9 +1319,6 @@ footer .bottom-box .information__link {
     font-size: 3.9rem;
     font-weight: 400;
     position: relative;
-    right: 30px;
-    bottom: 12px;
-
 }
 
 .testimonials__main-screen {
@@ -1349,7 +1339,7 @@ footer .bottom-box .information__link {
 }
 
 .testimonials__main-screen .left-box {
-    width: 853px;
+    width: 68%;
     display: block;
     margin-right: auto;
     margin-top: 35px;
@@ -1416,11 +1406,8 @@ footer .bottom-box .information__link {
 }
 
 .right-box {
-    width: 315px;
+    width: 25%;
     display: block;
-    position: relative;
-    right: 50px;
-
 }
 
 .right-box__heading {
@@ -1533,10 +1520,6 @@ footer .bottom-box .information__link {
     margin-inline-end: 0px;
     font-size: 3.9rem;
     font-weight: 400;
-    position: relative;
-    right: 30px;
-    bottom: 12px;
-
 }
 
 .about-us__main-screen {
@@ -1554,12 +1537,12 @@ footer .bottom-box .information__link {
 .about-us__main-screen .center-box {
     display: flex;
     width: 100%;
+    justify-content: space-between;
 }
 
 .about-us__main-screen .left-box {
-    width: 853px;
+    width: 68%;
     display: block;
-    margin-right: auto;
     margin-top: 14px;
 }
 
@@ -1590,10 +1573,18 @@ footer .bottom-box .information__link {
 }
 
 .about-us__main-screen .bio-box__portrait {
-    height: min-content;
-    border: solid 8px #e0e0e0;
     display: block;
     margin-right: 28px;
+    /*width: 34%;*/
+    width: 350%;
+    height: min-content;
+}
+
+.about-us__main-screen .bio-box__portrait img {
+    max-width: 100%;
+    height: auto;
+    border: solid 8px #e0e0e0;
+    display: block;
 }
 
 .about-us__main-screen .bio-box__content-box {
@@ -1689,6 +1680,12 @@ footer .bottom-box .information__link {
     }
 }
 
+@media screen and (max-width: 850px) {
+    header .menu {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 767px) {
     html,
     body {
@@ -1723,10 +1720,225 @@ footer .bottom-box .information__link {
     .info-box__text {
         font-size: 18px;
     }
+
+    .center-box {
+        flex-direction: column-reverse !important;
+    }
+
+    .right-box {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+
+    .left-box {
+        width: 100% !important;
+    }
+
+    .about-us__main-screen .container,
+    .faq__main-screen .container,
+    .testimonials__main-screen .container {
+        margin-bottom: 70px;
+    }
 }
 
-@media screen and (max-width: 669px) {
+@media screen and (max-width: 600px) {
     .info-box {
-        /*text-align: left;*/
+        text-align: left;
+    }
+
+    header .top .container {
+        display: block;
+    }
+
+    header .logo {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    html, body {
+        font-size: 13px;
+    }
+
+    .cover-screen {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .cover-screen .title {
+        font-size: 2rem;
+    }
+
+    .cover-screen .button-to-contact {
+        font-size: 14px;
+    }
+
+    .practices-screen .wrap-box {
+        display: block;
+    }
+
+    .practices-screen .block-link {
+        width: 100%;
+        background-color: #f9f9f9 !important;
+    }
+
+    .practices-screen .block-link:nth-child(even) {
+        background: #FFFFFF !important;
+    }
+
+    .application-screen .block-form {
+        width: 100%;
+    }
+
+    .badge-screen .container {
+        justify-content: center;
+    }
+
+    .badge-screen .box-link {
+        margin-bottom: 15px;
+    }
+
+    footer .quick-links {
+        margin-top: 20px;
+    }
+
+    .reason-screen .mini {
+        width: 100%;
+    }
+
+    .reason-screen .block {
+        box-sizing: border-box;
+    }
+
+    .reason-screen .block .title {
+        margin: 10px;
+        font-size: 2rem;
+    }
+
+    .testimonials-screen .title {
+        font-size: 2rem;
+    }
+
+    .testimonials-screen .title::before {
+        height: 40px;
+    }
+
+    .testimonials-screen .comment__text {
+        margin: 15px;
+    }
+
+    .testimonials-screen .comment__stars {
+        margin-top: 20px;
+    }
+
+    .testimonials-screen .comment__cloud {
+        min-height: initial;
+        padding-bottom: 23px;
+    }
+
+    .testimonials-screen .comment__cloud::after {
+        height: 40px;
+        width: 40px;
+        transform: rotate(45deg) skew(10deg, 10deg) translate(-10px, 37px);
+    }
+
+    .testimonials-screen .comment {
+        margin-bottom: 40px;
+    }
+
+    .testimonials-screen .comment__client-name {
+        font-size: 14px;
+    }
+
+    .testimonials-screen .comment__place {
+        font-size: 12px;
+    }
+
+    .testimonials-screen .read-more {
+        font-size: 14px;
+    }
+
+    .carusel__nav {
+        height: 25px;
+        width: 25px;
+    }
+
+    .practices-screen .title {
+        font-size: 2rem;
+    }
+
+    .quotes-screen .box::before {
+        top: 10px;
+        left: 10px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .quotes-screen .box .content {
+        margin: 15px;
+    }
+
+    .phone-screen .title {
+        font-size: 2rem;
+    }
+
+    .phone-screen .link {
+        font-size: 14px;
+    }
+
+    .application-screen .title {
+        font-size: 2rem;
+    }
+
+    .application-screen .submit-form {
+        padding-left: 4%;
+        margin-bottom: 40px;
+    }
+
+    .badge-screen .container {
+        margin-bottom: 30px;
+    }
+
+    footer .top-box {
+        margin-top: 30px;
+    }
+
+    .about-us__main-screen .bio-box__portrait {
+        display: none;
+    }
+
+    .right-box__link {
+        font-size: 14px;
+    }
+
+    .about-us__cover-screen,
+    .faq__cover-screen,
+    .testimonials__cover-screen {
+        height: 150px;
+    }
+
+    .about-us__main-screen .container,
+    .faq__main-screen .container,
+    .testimonials__main-screen .container {
+        margin-bottom: 40px;
+    }
+
+    .testimonials__main-screen .quote-block {
+        background-size: 30px;
+        background-position: 10px 10px;
+    }
+
+    .testimonials__main-screen .quote-block__content {
+        margin: 15px;
+    }
+
+    .testimonials__main-screen .quote-block__ocupation {
+        font-size: 1.1rem;
+    }
+
+    .testimonials__cover-screen .title,
+    .about-us__cover-screen .title,
+    .faq__cover-screen .title {
+        font-size: 3rem;
     }
 }
