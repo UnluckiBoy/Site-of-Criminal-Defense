@@ -1643,6 +1643,12 @@ footer .bottom-box .information__link {
     }
 }
 
+@media screen and (max-width: 850px) {
+    header .menu {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 767px) {
     html,
     body {
@@ -1742,10 +1748,6 @@ footer .bottom-box .information__link {
 
     .reason-screen .mini {
         width: 100%;
-    }
-
-    header .menu {
-        display: none;
     }
 
     .reason-screen .block {
