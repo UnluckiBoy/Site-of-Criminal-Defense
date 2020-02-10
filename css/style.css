@@ -1252,9 +1252,6 @@ footer .bottom-box .information__link {
 .faq__main-screen .right-box {
     width: 315px;
     display: block;
-    position: relative;
-    right: 50px;
-
 }
 
 .faq__main-screen .heading {
@@ -1385,11 +1382,8 @@ footer .bottom-box .information__link {
 }
 
 .right-box {
-    width: 315px;
+    width: 25%;
     display: block;
-    position: relative;
-    right: 50px;
-
 }
 
 .right-box__heading {
@@ -1488,7 +1482,6 @@ footer .bottom-box .information__link {
     font-size: 3.9rem;
     font-weight: 400;
     position: relative;
-    right: 30px;
     bottom: 12px;
 
 }
@@ -1508,12 +1501,12 @@ footer .bottom-box .information__link {
 .about-us__main-screen .center-box {
     display: flex;
     width: 100%;
+    justify-content: space-between;
 }
 
 .about-us__main-screen .left-box {
-    width: 853px;
+    width: 68%;
     display: block;
-    margin-right: auto;
     margin-top: 14px;
 }
 
@@ -1544,10 +1537,18 @@ footer .bottom-box .information__link {
 }
 
 .about-us__main-screen .bio-box__portrait {
-    height: min-content;
-    border: solid 8px #e0e0e0;
     display: block;
     margin-right: 28px;
+    /*width: 34%;*/
+    width: 350%;
+    height: min-content;
+}
+
+.about-us__main-screen .bio-box__portrait img {
+    max-width: 100%;
+    height: auto;
+    border: solid 8px #e0e0e0;
+    display: block;
 }
 
 .about-us__main-screen .bio-box__content-box {
@@ -1682,6 +1683,23 @@ footer .bottom-box .information__link {
 
     .info-box__text {
         font-size: 18px;
+    }
+
+    .about-us__main-screen .center-box {
+        flex-direction: column-reverse;
+    }
+
+    .right-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-us__main-screen .left-box {
+        width: 100%;
+    }
+
+    .about-us__main-screen .container {
+        margin-bottom: 70px;
     }
 }
 
@@ -1845,5 +1863,17 @@ footer .bottom-box .information__link {
 
     footer .top-box {
         margin-top: 30px;
+    }
+
+    .about-us__main-screen .bio-box__portrait {
+        display: none;
+    }
+
+    .right-box__link {
+        font-size: 14px;
+    }
+
+    .about-us__cover-screen {
+        height: 150px;
     }
 }
