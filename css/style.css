@@ -1147,8 +1147,6 @@ footer .bottom-box .information__link {
     font-size: 3.9rem;
     font-weight: 400;
     position: relative;
-    right: 30px;
-    bottom: 12px;
 }
 
 .faq__main-screen {
@@ -1169,7 +1167,7 @@ footer .bottom-box .information__link {
 }
 
 .faq__main-screen .left-box {
-    width: 853px;
+    width: 68%;
     display: block;
     margin-right: auto;
     margin-top: 35px;
@@ -1250,7 +1248,7 @@ footer .bottom-box .information__link {
 }
 
 .faq__main-screen .right-box {
-    width: 315px;
+    width: 25%;
     display: block;
 }
 
@@ -1292,9 +1290,6 @@ footer .bottom-box .information__link {
     font-size: 3.9rem;
     font-weight: 400;
     position: relative;
-    right: 30px;
-    bottom: 12px;
-
 }
 
 .testimonials__main-screen {
@@ -1315,7 +1310,7 @@ footer .bottom-box .information__link {
 }
 
 .testimonials__main-screen .left-box {
-    width: 853px;
+    width: 68%;
     display: block;
     margin-right: auto;
     margin-top: 35px;
@@ -1481,9 +1476,6 @@ footer .bottom-box .information__link {
     margin-inline-end: 0px;
     font-size: 3.9rem;
     font-weight: 400;
-    position: relative;
-    bottom: 12px;
-
 }
 
 .about-us__main-screen {
@@ -1685,20 +1677,22 @@ footer .bottom-box .information__link {
         font-size: 18px;
     }
 
-    .about-us__main-screen .center-box {
-        flex-direction: column-reverse;
+    .center-box {
+        flex-direction: column-reverse !important;
     }
 
     .right-box {
-        width: 100%;
+        width: 100% !important;
         margin-bottom: 20px;
     }
 
-    .about-us__main-screen .left-box {
-        width: 100%;
+    .left-box {
+        width: 100% !important;
     }
 
-    .about-us__main-screen .container {
+    .about-us__main-screen .container,
+    .faq__main-screen .container,
+    .testimonials__main-screen .container {
         margin-bottom: 70px;
     }
 }
@@ -1873,7 +1867,34 @@ footer .bottom-box .information__link {
         font-size: 14px;
     }
 
-    .about-us__cover-screen {
+    .about-us__cover-screen,
+    .faq__cover-screen,
+    .testimonials__cover-screen {
         height: 150px;
+    }
+
+    .about-us__main-screen .container,
+    .faq__main-screen .container,
+    .testimonials__main-screen .container {
+        margin-bottom: 40px;
+    }
+
+    .testimonials__main-screen .quote-block {
+        background-size: 30px;
+        background-position: 10px 10px;
+    }
+
+    .testimonials__main-screen .quote-block__content {
+        margin: 15px;
+    }
+
+    .testimonials__main-screen .quote-block__ocupation {
+        font-size: 1.1rem;
+    }
+
+    .testimonials__cover-screen .title,
+    .about-us__cover-screen .title,
+    .faq__cover-screen .title {
+        font-size: 3rem;
     }
 }
