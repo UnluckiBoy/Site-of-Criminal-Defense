@@ -140,13 +140,23 @@ header .menu__link {
     text-decoration: none;
     display: inline-block;
     /* margin: 0px 10px; */
+    transition: 0.4s;
 }
+
+/* header .menu__link:hover {
+    color: #cfcec5;
+} */
 
 header .menu__name {
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: bold;
-    
+    transition: 0.4s;
+}
+
+header .menu__name:hover {
+    /* color: #cfcec5; */
+    color: #e2e2e2;
 }
 
 header li {
@@ -230,6 +240,7 @@ header .sub-area {
     font-size: 19px;
     font-weight: 500;
     letter-spacing: 1px;
+    transition: 0.3s;
 }
 
 .cover-screen .button-to-contact:hover {
@@ -549,6 +560,7 @@ header .sub-area {
     font-size: 19px;
     font-weight: 500;
     letter-spacing: .7px;
+    transition: 0.3s;
 }
 
 .testimonials-screen .read-more:hover {
@@ -606,13 +618,13 @@ header .sub-area {
     box-sizing: border-box;
 }
 
-.practices-screen .block-link:nth-child(even):hover {
+/* .practices-screen .block-link:nth-child(even):hover {
     background: lightgrey;
 }
 
 .practices-screen .block-link:hover {
      background: lightgrey;
-}
+} */
 
 .practices-screen .block-link:nth-child(even) {
     background: #FFFFFF;
@@ -776,10 +788,11 @@ header .sub-area {
     border-radius: 50px;
     display: inline-block;
     letter-spacing: .7px;
+    transition: 0.4s;
 }
 
 .phone-screen .link:hover {
-    background: #666666;
+    background: #e2e2e2;
 }
 
 .application-screen {
@@ -898,6 +911,7 @@ header .sub-area {
     border: 0px;
     margin-bottom: 100px;
     padding-left: 50px;
+    transition: 0.3s;
 }
 
 .application-screen .submit-form:hover {
@@ -1019,6 +1033,11 @@ footer .contact-us__link {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 0.8rem;
+    transition: 0.4s;
+}
+
+footer .contact-us__link:hover {
+    color: rgb(207, 206, 197);  
 }
 
 footer .contact-us__way__link {
@@ -1026,6 +1045,11 @@ footer .contact-us__way__link {
     color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+footer .contact-us__way__link:hover {
+    color: #ebebeb;
 }
 
 footer .quick-links {
@@ -1064,6 +1088,11 @@ footer .quick-links__link {
     text-transform: uppercase;
     font-size: 0.8rem;
     color: #FFFFFF;
+    transition: 0.4s;
+}
+
+footer .quick-links__link:hover {
+    color: rgb(207, 206, 197);
 }
 
 footer .directions {
@@ -1439,12 +1468,22 @@ footer .bottom-box .information__link {
     font-weight: bold;
     margin-bottom: 12px;
     display: inline-block;
+    transition: 0.4s;
+}
+
+.side-menu__main-area:hover {
+    color: #383838;
 }
 
 .side-menu__sub-area {
     margin-bottom: 14px;
     display: inline-block;
     color: #656565;
+    transition: 0.4s;
+}
+
+.side-menu__sub-area:hover {
+    color:#222;
 }
 
 .right-box__link {
@@ -1460,6 +1499,11 @@ footer .bottom-box .information__link {
     font-weight: 500;
     width: 100%;
     text-align: center;
+    transition: 0.3s;
+}
+
+.right-box__link:hover {
+    background: #666666;
 }
 
 /* about-us page */
