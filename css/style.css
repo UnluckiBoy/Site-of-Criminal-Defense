@@ -119,6 +119,17 @@ header .navbar {
     
 }
 
+.navbar__mobile-btn {
+    display: none;
+    outline: none;
+    border: none;
+    background: url(../img/icons/menu.svg) no-repeat center;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+}
+
 header .navbar .container {
     max-width: 1160px;
     width: 100%;
@@ -126,6 +137,7 @@ header .navbar .container {
     display: block;
     height: 55px;
     align-items: center;
+    position: relative;
 }
 
 header .menu {
@@ -1685,6 +1697,24 @@ footer .bottom-box .information__link {
 @media screen and (max-width: 850px) {
     header .menu {
         display: none;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        padding-left: 15px;
+        box-sizing: border-box;
+        background-color: #696036;
+    }
+
+    .navbar__mobile-btn {
+        display: block;
+    }
+
+    header .menu_show {
+        display: block;
+    }
+
+    header .menu > li > .menu__link {
+        padding: 10px 0;
     }
 }
 
