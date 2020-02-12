@@ -1483,6 +1483,16 @@ footer .bottom-box .information__link {
     transition: 0.4s;
 }
 
+.side-menu__sub-area::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: url(../img/icons/next.svg) no-repeat center;
+    background-size: contain;
+    margin-right: 10px;
+}
+
 .side-menu__sub-area:hover {
     color:#222;
 }
