@@ -433,6 +433,7 @@ header .sub-area {
 .testimonials-screen .carusel-inner {
     display: flex;
     margin: 0 auto;
+    transition: .3s transform;
 }
 
 .testimonials-screen .comment {
@@ -534,6 +535,7 @@ header .sub-area {
     width: 45px;
     position: absolute;
     top: 24%;
+    z-index: 99;
 }
 
 .carusel__prev {
